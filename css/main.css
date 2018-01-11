@@ -1,1 +1,6 @@
 /* Los estilos de tu proyecto */
+/*header*/
+.navbar{
+	background: white;
+	color: black;
+}

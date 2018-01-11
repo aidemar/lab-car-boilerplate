@@ -1,6 +1,99 @@
-/* Los estilos de tu proyecto */
+* {
+  box-sizing: border-box;
+/*  Esto hizo que los elementos ya no se pusieran hacia abajo.
+*/
+  margin: 0;
+  padding: 0;
+}
+
+.row:before,
+.row:after {
+  content:"";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row{
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+[class*="col-"]{
+   float: left;
+   min-height: 10px;
+   padding: 20px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1300;
+  margin: 0px auto;
+}
+
+/*Grid*/
+.col-12 {
+  width: calc(100%);
+}
+
 /*header*/
 .navbar{
 	background: white;
 	color: black;
+}
+
+/*main section*/
+.main-section {
+	background-image: url(../assets/images/taxi.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	height: 35em;
+}
+
+/*Sección app*/
+.app-section{
+	background-color: #F7B617;
+}
+
+.celphone-image{
+	outline: 2px solid white;
+}
+
+/*Sección conductor*/
+.driver-section{
+		background-image: url(../assets/images/conduce.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.7;
+		height: 35em;
+}
+
+/*Sección tarifas*/
+.rates-section {
+	background-color: #F7B617;
+}
+
+/*Footer*/
+footer {
+	background-color: #2B2B2B;
+	color: white;
+}
+
+a {
+color: white;
+text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+br {
+	color: white;
 }

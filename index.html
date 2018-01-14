@@ -13,6 +13,7 @@
 	<title>Lab < ar </title>
 </head>
 <body>
+<!--Inicia header-->
 	<header>
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 	    <div class="container">
@@ -23,7 +24,7 @@
 							<img src="assets\images\logoForma.png" alt="">
 <!--Botón pára responsive designe, para ocultar el menú -->
     					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-lab">
-    		<!--con el # hacemos referencia a que estámos accediendo a un elemento id, en este caso de la línea30-->
+    		<!--con el # hacemos referencia a que estámos accediendo a un elemento id, en este caso de la línea34-->
 		    				<span class="sr-only" >Desplegar/ocultar menu</span>
 		    				<span class="icon-bar"></span>
 		    				<span class="icon-bar"></span>
@@ -35,33 +36,68 @@
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="#">Viaja</a></li>
 								<li><a href="#">Conduce</a></li>
-								<li><a href="#">Inicia Sesión</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Inicia Sesión</a></li>
 							</ul>
 						</div>
-	    		</div>
+	    			</div>
 				</div>
 			</div>
 		</nav>
   </header>
+<!-- versión prueba-->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button> -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <img class="modal-image" src="http://dummyimage.com/100x100">
+     </div>
+      <div class="col-md-4 modal-body">	
+			<div class="personal-data">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<input type="text" name="" value="">
+				<i class="fa fa-lock" aria-hidden="true"></i>
+				<input type="text" name="" value="">
+			</div>
+      <!--   <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form> -->
+      </div>
+  <!--modal del footer, close y send-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!--Inicia sección descarga app-->
-	<section class="col-md-12 main-section">
+	<section class="main-section">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-12">
 				<!-- <div class="col-md-4 col-md-offset-8"> -->
-					<div class="text-main-section text-center col-md-4 col-md-offset-8">
-					<h2 class="text1">Disfruta tu viaje</h2>
-					<h2 class="text2">Eres dueño de tu tiempo</h2>
-					<h3 class="text3">Viaja con Lab < ar </h3>
-					<button class="btn-main-section" type="button">
-						Regístrate
-					</button>
-
-					<h4 class="text4"> ___________ o bien ___________</h4>
-					<button class="btn-main-section" type="button">
-						Conviertete en conductor
-					</button>
+					<div class="row">
+						<div class="text-main-section text-center col-md-4 col-md-offset-8">
+							<h2 class="text1">Disfruta tu viaje</h2>
+							<h2 class="text2">Eres dueño de tu tiempo</h2>
+							<h3 class="text3">Viaja con Lab < ar </h3>
+							<button class="btn-main-section" type="button">Regístrate</button>
+							<h4 class="text4"> ___________ o bien ___________</h4>
+							<button class="btn-main-section" type="button">Conviertete en conductor</button>
+						</div>
 					</div>
 				<!-- </div> -->
+				</div>
 			</div>
 		</div>
 	</section>
@@ -69,32 +105,34 @@
 	<section class="app-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<div class="celphone-image col-md-10">
-						<div class="col-4">
-							<img src="assets\images\iPhone6Plus.png" alt="iPhone">
-						</div>
-						<div class="text-app col-4">
-							<h3>Descarga la nueva App</h3>
-							<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún  más fácil  y rápido.</p>
-							<p> Con sólo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exáctamente a donde ir.</p>
-						</div>
+				<div class="col-10">
+					<div class="celphone-image row">
+							<div class="col-md-6 col-xs-12">
+								<img class="col-xs-12" src="assets\images\iPhone6Plus.png" alt="iPhone">
+							</div>
+							<div class="text-app col-md-6 col-xs-12">
+								<h3>Descarga la nueva App</h3>
+								<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún  más fácil  y rápido.</p>
+								<p> Con sólo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exáctamente a donde ir.</p>
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--Sección conductor-->
-	<section class="driver-section col-md-12">
+	<section class="driver-section">
 		<div class="container">
 			<div class="row">
-				<div class="text-center col-md-4 col-md-offset-8">
-					<div class="inf-driver-section">
-						<p>Conduce cuando quieras</p>
-						<p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
-						<button type="button">
-							Conviertete en conductor
-						</button>
+				<div class="col-md-12">
+					<div class="text-center col-md-4 col-md-offset-8 col-xs-12">
+						<div class="inf-driver-section">
+							<p>Conduce cuando quieras</p>
+							<p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
+							<button type="button">
+								Conviertete en conductor
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -105,28 +143,28 @@
 	<section class="rates-section">
 		<div class="container">
 			<div class="row">
-				<div class="rates col-md-12">
-					<div class="rates-text col-md-6">
-						<p>Tarifas</p>
-						<p>Consulta las tarifas LabCar aquí</p>
-					<div class="col-md-4">
-						<div class="location">
-								<img src="assets\images\shape.png" alt="">
-								<input type="text" name="" value="">
-						</div>
-						<div class="destination">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="rates-text col-md-6">
+							<h3 class="rates-text1"> Tarifas </h3>
+							<p class="rates-text2">Consulta las tarifas LabCar aquí</p>
+							<div class="location">
+									<img src="assets\images\shape.png" alt="">
+									<input type="text" name="" value="">
+							</div>
+							<div class="destination">
 								<img src="assets\images\shape2.png" alt="">
 								<input type="text" name="" value="">
+							</div>
+							<div class="rate-button">
+							<button type="button" name="button">¡Traza tu ruta!</button>
+							</div>
+						</div>
+						<div class="map col-md-6 col-xs-12">
+						<iframe class="col-xs-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3823559876337!2d-99.15807328552548!3d19.439074886880565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff32d4f109b7%3A0x5c4eb1e6c0720de1!2sInsurgentes+Centro%2C+Buenavista%2C+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1515689027704" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</div>
-				<div class="rate-button">
-				<button type="button" name="button">¡Traza tu ruta!</button>
 				</div>
-			</div>
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3823559876337!2d-99.15807328552548!3d19.439074886880565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff32d4f109b7%3A0x5c4eb1e6c0720de1!2sInsurgentes+Centro%2C+Buenavista%2C+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1515689027704" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-			</div>
 			</div>
 		</div>
 	</section>
@@ -137,55 +175,54 @@
 				<div class="col-12">
 					<div class="title">
 						<img src="assets\images\logoBlanco.png" alt="">
-						<br>
+						<hr>
 					</div>
-					<div class="col-12">
-					<div class="left-list col-md-3">
-						<ul class="list-group">
-							<li><a href="#">Viaja</a></li>
-							<li><a href="#">Conduce</a></li>
-							<li><a href="#">Ciudades</a></li>
-							<li><a href="#">Ciudades</a></li>
-							<li><a href="#">Entregas</a></li>
-							<li><a href="#">¿Cómo funciona?</a></li>
-							<li><a href="#">Paises</a></li>
-							<li><a href="#">Seguridad</a></li>
-						</ul>
-					</div>
-					<div class="right-list col-md-3">
-						<ul class="list-group">
-							<li><a href="#">Oportunidades</a></li>
-							<li><a href="#">Nuestra Historia</a></li>
-							<li><a href="#">API de LabCar</a></li>
-							<li><a href="#">Eventos</a></li>
-							<li><a href="#">Desarrolladores</a></li>
-							<li><a href="#">Servicios</a></li>
-							<li><a href="#">Paises</a></li>
-							<li><a href="#">Seguridad</a></li>
-						</ul>
-					</div>
-					<div class="app-stores col-md-3">
-						<img src="assets\images\enBadgeWebGeneric.png" alt="">
-						<img src="assets\images\appstore.png" alt="">
-					</div>
-					<div class="social-nets col-md-3">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<i class="fa fa-instagram" aria-hidden="true"></i>
-						<i class="fa fa-apple" aria-hidden="true"></i>
-						<i class="fa fa-play" aria-hidden="true"></i>
+						<div class="row">
+							<div class="social-nets col-md-3 col-xs-12">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+								<i class="fa fa-apple" aria-hidden="true"></i>
+								<i class="fa fa-play" aria-hidden="true"></i>
+								</div>
+						<div class="left-list col-md-3 col-xs-12">
+							<ul class="list-group">
+								<li><a href="#">Viaja</a></li>
+								<li><a href="#">Conduce</a></li>
+								<li><a href="#">Ciudades</a></li>
+								<li><a href="#">Ciudades</a></li>
+								<li><a href="#">Entregas</a></li>
+								<li><a href="#">¿Cómo funciona?</a></li>
+								<li><a href="#">Paises</a></li>
+								<li><a href="#">Seguridad</a></li>
+							</ul>
+						</div>
+						<div class="right-list col-md-3 col-xs-12">
+							<ul class="list-group">
+								<li><a href="#">Oportunidades</a></li>
+								<li><a href="#">Nuestra Historia</a></li>
+								<li><a href="#">API de LabCar</a></li>
+								<li><a href="#">Eventos</a></li>
+								<li><a href="#">Desarrolladores</a></li>
+								<li><a href="#">Servicios</a></li>
+								<li><a href="#">Paises</a></li>
+								<li><a href="#">Seguridad</a></li>
+							</ul>
+						</div>
+						<div class="app-stores col-md-3 col-xs-12">
+							<img src="assets\images\enBadgeWebGeneric.png" alt="">
+							<img src="assets\images\appstore.png" alt="">
+						</div>
 					</div>
 				</div>
 				<div class="col-12 text-center">
-					<br>
+					<hr>
 					<p>Copy Right 2018</p>
 				</div>
 				</div>
 			</div>
 		</div>
 	</footer>
-
-
 
 	<script src="js\jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

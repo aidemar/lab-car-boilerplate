@@ -85,6 +85,18 @@
 	color: black;
 }
 
+button {
+  color: black;
+}
+
+/*header-modal*/
+.modal-image{
+  margin-left: 15em;
+}
+
+.modal-content {
+  background-color: #08AC9D;
+}
 /*main section*/
 .main-section {
 	background-image: url(../assets/images/taxi.jpg);
@@ -92,7 +104,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	opacity: 0.7;
-	height: 100vh;
+	height: 150vh;
   background-position: bottom;
 }
 
@@ -128,13 +140,16 @@
 	background-color: #F7B617;
 }
 
+
 .celphone-image {
-	outline: 2px solid white;
+  outline: 2px solid white;
 }
 
 .text-app {
   color: white;
+  margin-top: 5em;
 }
+
 
 /*Sección conductor*/
 .driver-section{
@@ -156,6 +171,18 @@
 /*Sección tarifas*/
 .rates-section {
 	background-color: #F7B617;
+}
+
+.rates-text {
+  margin-top: 3em;
+}
+
+.rates-text1, .rates-text2 {
+  color: white;
+}
+
+.destination, .location, .rate-button {
+  margin-top: 2em;
 }
 
 /*Footer*/

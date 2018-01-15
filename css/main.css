@@ -90,13 +90,18 @@ button {
 }
 
 /*header-modal*/
-.modal-image{
-  margin-left: 15em;
-}
 
 .modal-content {
-  background-color: #08AC9D;
+  background: #08AC9D;
 }
+
+.modal-button{
+  background: #F6AD4E;
+  color: white;
+  margin-top: 1em;
+}
+
+
 /*main section*/
 .main-section {
 	background-image: url(../assets/images/taxi.jpg);

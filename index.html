@@ -48,7 +48,7 @@
 <!--¿Debe ir dentro del header-->
 <div class="modal fade" id="iniciaSesión" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content1">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <img class="modal-image col-md-offset-4" src="http://dummyimage.com/100x100">
@@ -84,7 +84,7 @@
 							<h3 class="text3">Viaja con Lab < ar </h3>
 							<button class="btn-main-section" type="button" data-toggle="modal" data-target="#registrate">Regístrate</button>
 							<h4 class="text4"> ___________ o bien ___________</h4>
-							<button class="btn-main-section" type="button">Conviertete en conductor</button>
+							<button class="btn-main-section" type="button" data-toggle="modal" data-target="#became-a-driver">Conviertete en conductor</button>
 						</div>
 					</div>
 				<!-- </div> -->
@@ -96,30 +96,84 @@
 <!--Modal Regístrate-->	
 <div class="modal fade" id="registrate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog" role="document">
-    <div class="modal-content">
+    <div class="modal-content2">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+        <label for="recipient-name" class="count-label">¿Ya tienes una cuenta?</label>
       </div>
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="recipient-name" class="control-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="control-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <input type="text" class="form-control" placeholder="Nombre" id="recipient-name"> 
+            <input type="text" class="form-control" placeholder="Apellido" id="recipient-name">
+            <input type="text" class="form-control" placeholder="Correo" id="recipient-name">
+            <input type="text" class="form-control" placeholder="Teléfono" id="recipient-name">
+            <input type="text" class="form-control" placeholder="Contraseña" id="recipient-name">
+            <input type="text" class="form-control" placeholder="Ciudad" id="recipient-name">
+            <input type="text" class="form-control" placeholder="(Opcional) Código de invitación" id="recipient-name">
+           <ul class="nav navbar-nav">
+              <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Cómo te enteraste de nosotros? <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
       </div>
     </div>
   </div>
-</div> -->
+</div> 
+<!--Modal Conviertete en conductor-->
+	<div class="modal fade" id="became-a-driver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content2">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	           <ul class="nav navbar-nav">
+	           	<label>¿Tú vehículo tiene cuatro puertas?</label>
+	           	<br>
+	              <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Selecciona una opción<span class="caret"></span></a>
+	              <ul class="dropdown-menu">
+	                <li><a href="#">Si</a></li>
+	                <li><a href="#">No</a></li>
+	              </ul>
+	              <label>Marca</label>
+	                <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elige la marca del vehículo
+	              <ul class="dropdown-menu">
+	                <li><a href="#">Está</a></li>
+	                <li><a href="#">No está</a></li>
+	              </ul>
+	          </div>
+	   <!--        <div class="form-group">
+	           <ul class="nav navbar-nav">
+	           	<label>Marca</label>
+	           	<br>
+	              <li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elige la marca del vehículo
+	              <ul class="dropdown-menu">
+	                <li><a href="#">Si</a></li>
+	                <li><a href="#">No</a></li>
+	              </ul>
+	          </div> -->
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Enviar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div> 
 <!--sección app-->
 	<section class="app-section">
 		<div class="container">
